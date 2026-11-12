@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="uk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Інтерактивний робочий аркуш для групової роботи з ШІ"><title>ШІ — Професійна комунікація — Робочий аркуш</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<header><div class="wrap"><div class="kicker">Практична робота • 10 клас</div><h1>ШІ в повсякденному житті</h1><p>Робочі аркуші для трьох груп: сформулюйте запит, перевірте відповідь ШІ та підготуйте короткий захист.</p></div></header>
+<div class="wrap"><nav class="no-print">
+<a href="index.html">Головна</a><a href="group-a.html" >Група А</a><a href="group-b.html" >Група Б</a><a href="group-c.html" class="active">Група В</a>
+</nav><main><article class="sheet c">
+<div class="sheet-head"><div class="symbol">✉️</div><div><div class="kicker" style="color:var(--accent)">Робочий аркуш • Група В</div><h2>ШІ — Професійна комунікація</h2><p class="subtitle">Помаранчева / жовта гама</p></div></div>
+<div class="goal"><strong>Мета групи</strong><br>Створити етичні шаблони професійного листування та навчитися розв'язувати робочі ситуації за допомогою ШІ.</div>
+<div class="field"><label>Учасники групи</label><input type="text" placeholder="Впишіть імена учасників"></div>
+<h3>Крок 1. Формування запиту (промпт)</h3><p>Скопіюйте запропонований запит у ChatGPT або Gemini. За потреби адаптуйте його під свою ситуацію.</p>
+<div class="prompt">«Ти — експерт із ділового етикету. Напиши ввічливе, але чітке повідомлення вчителю або тренеру з проханням перенести термін виконання проєкту. Тон має бути доброзичливим, поважним і впевненим».</div>
+<div class="field"><label for="my-prompt">Наш адаптований промпт</label><textarea id="my-prompt" placeholder="Запишіть власний варіант запиту..."></textarea></div>
+
+<h3>Крок 2. Результат роботи ШІ</h3>
+<div class="field"><label>Ситуація, яку ми обрали</label><input type="text" placeholder="Наприклад, прохання перенести дедлайн проєкту"></div>
+<div class="field"><label>Згенерований текст повідомлення</label><textarea style="min-height:150px" placeholder="Вставте сюди текст, створений ШІ..."></textarea></div>
+<div class="field"><label>Що ми змінили у відповіді ШІ?</label><textarea placeholder="Наприклад, прибрали надто офіційні фрази, додали конкретну причину..."></textarea></div>
+<h3>Крок 3. Аудит тону та етики</h3>
+<div class="checks">
+<label><input type="checkbox">Текст ввічливий і доброзичливий.</label>
+<label><input type="checkbox">Дотримано правил мовного етикету та поваги до адресата.</label>
+<label><input type="checkbox">Повідомлення чітке, конкретне й зрозуміле.</label>
+<label><input type="checkbox">Немає зайвих канцеляризмів або штучних фраз.</label>
+<label><input type="checkbox">Текст звучить природно та відповідає реальній ситуації.</label>
+</div>
+<div class="field"><label>Яке речення найкраще демонструє ввічливий і впевнений тон?</label><textarea placeholder="Запишіть речення та поясніть свій вибір..."></textarea></div>
+<h3>Крок 4. Висновок і захист</h3><div class="field"><label>Чому важливо перевіряти текст, створений ШІ?</label><textarea placeholder="Сформулюйте короткий висновок..."></textarea></div>
+<p><strong>Під час захисту (1 хвилина):</strong> зачитайте повідомлення та поясніть, чому воно ефективне й етичне.</p>
+
+<div class="actions no-print"><button class="btn primary" onclick="window.print()">Друкувати / зберегти PDF</button><button class="btn" onclick="clearFields()">Очистити відповіді</button><a class="btn" href="index.html">На головну</a></div>
+</article>
+<section class="reflection"><h3 style="margin-top:0;color:var(--brand)">Спільна рефлексія</h3><p>1. Що нового Ви дізналися про можливості ШІ?</p><textarea placeholder="Ваша відповідь..."></textarea><p>2. Чому не можна бездумно довіряти кожній відповіді ШІ?</p><textarea placeholder="Ваша відповідь..."></textarea><p>3. Як використаєте ці навички у повсякденному житті?</p><textarea placeholder="Ваша відповідь..."></textarea><p class="note">Підсумок: ШІ — це помічник, але відповідальність за перевірку інформації та остаточне рішення залишається за людиною.</p></section>
+</main></div><footer>Навчальний матеріал • ШІ та відповідальне використання цифрових інструментів</footer>
+<script>function clearFields(){if(confirm('Очистити всі заповнені поля цього аркуша?')){document.querySelectorAll('textarea,input[type=text],input[type=checkbox]').forEach(el=>{if(el.type==='checkbox')el.checked=false;else el.value='';})}}</script>
+</body></html>
